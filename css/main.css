@@ -158,6 +158,7 @@ header nav ul li a {
 /******** FOOTER STYLES ********/
 /* The widths are in a percentage! */
 footer {
+	width: 100%;
 	display: flex;
 	text-align: center;
 	margin-top: 8px;
@@ -169,4 +170,67 @@ footer span {
 	text-transform: lowercase;
 	color: #45610E;
 	font-size: 0.75em;
+}
+/*TABLET -----------------------------*/
+@media all and (min-width: 768px) {
+	.bottom-section, .content-wrapper {
+		justify-content: space-evenly;
+	}
+.section-one,
+.section-two,
+.section-three {
+	box-sizing: border-box;
+	padding-left: 20px;
+	font-size: 1em;
+}
+
+.section-one {
+	width: 30%;
+	border-bottom: 0;
+}
+
+.section-two {
+	width: 40%;
+	border-left:  5px solid #EEE;
+	border-right: 5px solid #EEE;
+	border-bottom: 0;
+	padding-right: 20px;
+	
+}
+
+.section-three {
+	width: 30%;
+}
+
+}
+/*Desktop ------------------------------------
+
+header .content-wrapper
+header h1
+header nav
+header nav ul
+*/
+@media all and (min-width: 1200px) {
+body{
+	font-size: 1em;
+	}
+header .content-wrapper {
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+header h1 {
+	width: 75%;
+	text-align: left;
+	padding: 20px;
+	border-bottom: blue;
+}
+header nav {
+	width: 21%;
+}
+header nav ul {
+	display: flex;
+	justify-content: space-between;
+
+}
 }
